@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+  // Chương trình kiểm tra xem V có thuộc mảng đã cho không,
+  // nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+  // và gán 0 cho phần tử cuối cùng của mảng)
+
+  let arr = [1,-2,-3,7,45,67,123,86,-123,-456]
+  let V =parseInt(prompt('Nhập số nguyên V'))
+  for (let i = 0; i < arr.length; i++) {
+    if (V == arr[i]){
+      arr.splice(i, 1)
+      break;
+    }else {if (i === arr.length -1){
+      alert("V is not in the array")
+    }
+    }
+  }document.write(arr)
+</script>
+</body>
+</html>

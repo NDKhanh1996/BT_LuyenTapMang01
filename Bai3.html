@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo mảng số nguyên.
+    //         Hiển hiện giá trị lớn nhất trong mảng đó.
+    //         In ra giá trị trung bình của các phần tử trong mảng.
+    let arr = [12,456,1,4,6,12,6,23,7,13]
+    let max = arr[0]
+    let sum = 0
+    for (let i = 0; i < 10; i++) {
+sum += arr[i]
+        if (arr[i] > max){
+            max = arr[i]
+        }
+    }document.write('Số lớn nhất là ' + max + '<br>')
+    document.write('TB là ' + sum / arr.length)
+
+</script>
+</body>
+</html>
